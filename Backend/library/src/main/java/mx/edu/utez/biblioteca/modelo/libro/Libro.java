@@ -36,6 +36,8 @@ public class Libro {
     @Column(name = "status",nullable = false, columnDefinition = "tinyint default 1")
     //@JsonIgnore
     private boolean status;
+    @Column(name = "url_reporte")
+    private String urlReporte;
 
     @OneToMany(mappedBy = "libro")
     private List<Renta> renta;

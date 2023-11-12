@@ -24,5 +24,6 @@ public interface LibroRepository extends JpaRepository<Libro, Long> {
     List<Libro> findAllByStatus(Boolean status);
     Libro getById(Long id);
 
+    Libro getLibroByTitulo(String titulo);
 
 }

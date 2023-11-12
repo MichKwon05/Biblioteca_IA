@@ -24,6 +24,7 @@ public class LibroDto {
     private String anio;
     private String descripcion;
     private Boolean status;
+    private String urlReporte;
     private List<Renta> rentas;
 
     public Libro getLibro() {
@@ -35,6 +36,7 @@ public class LibroDto {
                 getAnio(),
                 getDescripcion(),
                 getStatus(),
+                getUrlReporte(),
                 getRentas()
         );
     }
